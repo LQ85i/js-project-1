@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(14, 41, 35);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+
+#display-books {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-item {
+    background-color: rgb(24, 70, 60);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 7px;
+    width: 850px;
+    margin: 2px;
+    padding: 3px;
+    align-self: center;
+    display: grid;
+    display: flex;
+    gap: 30px;
+}
+
+.author, .title {
+    width: 250px;
+}
+.pages, .is-read {
+    width: 100px;
+}
+
+.info-header{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.info-text {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+
+form {
+    background-color: rgb(24, 70, 60);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 10px;
+    max-width: 700px;
+    align-self: center;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 50px;
+    margin-bottom: 10px;
+}
+
+.form-item {
+    padding: 10px;
+    display: grid;
+}
+
+#button-new-book {
+    background-color: rgb(28, 88, 75);
+    color: white;
+    border-radius: 5px;
+    border: 1px outset rgba(49, 167, 143, 0.575);
+    align-self: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+    margin-bottom: 10px;
+}
+
+
+.button-close-form {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.575);
+    position: absolute;
+    margin-left: 420px;
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.568);
+    border-radius: 4px;
+}
+.button-close-form:hover {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.button-close-form:active {
+    border: 1px solid rgb(158, 158, 158);
+    color: rgb(255, 255, 255);
+}
+
+
+#button-new-book:active {
+    border: none;
+    box-shadow: none;
+    background-color: rgb(33, 109, 92);
+    margin-top: 1px;
+    padding-top: 2px;
+}
+
+.submit {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
+#button-submit {
+    width: 100px;
+}
+
+.remove-book {
+    background-color: transparent;
+    color: rgba(255, 0, 0, 0.719);
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid rgba(255, 0, 0, 0.63);
+    border-radius: 4px;
+}
+
+.remove-book:hover {
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+.remove-book:active {
+    color: rgb(255, 0, 0);
+    border: 1px solid rgb(121, 0, 0);
+}
+
+#example-item {
+    display: none;
+}
+
+.is-read {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.is-read .info-header {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.is-read .info-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.button-change-read {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 18px;
+    width: 25px;
+    height: 20px;
+    margin-top: -2px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 94, 80);
+    color: white;
+    border: 2px solid rgb(14, 43, 37);    
+}
+
+.button-change-read:hover {
+    background-color: rgb(38, 114, 97);
+}
+
+.button-change-read:active {
+    background-color: rgb(20, 63, 55);
+}
+
